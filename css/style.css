@@ -172,8 +172,26 @@ footer{
 }
 
 
+
+
 /* Media Queries */
-@media (max-width:768px){
+
+
+@media only screen and (min-width: 770px) {  /* Media Queries for Desktop and big Screens */
+
+  #showcase{
+    min-height: 400px;
+  
+    background: url('../img/Bamboo_Screen.jpg')no-repeat 0;
+    background-size: 120%;
+    text-align: center;
+    color:#fff;
+    }
+
+  }
+
+  
+@media (max-width:768px){     /* Media Queries for Smart Phones and Tablets screens */
   header #branding,
   header nav,
   header nav li,
@@ -191,14 +209,20 @@ footer{
   }
   #showcase h1{
       margin-top:40px;
+      font-size: 40px;
+
   }
+   #showcase p{
+      font-size:15px;
+   }
   #newsletter button, .quote button{
       display:block;
       width: 100%;
   }
 
-  #newsletter form input ,.quote input,.quote textarea {
-    width:100%;
+  #newsletter form input ,.quote input {
+    width:100px;
     margin-bottom: 5px;
+   
   }
 }
